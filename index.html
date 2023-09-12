@@ -16,6 +16,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'gradient-start':'#FF8938',
+                'gradient-end':'#F00',
               }
             }
           }
@@ -28,10 +30,9 @@
       </style>
 </head>
 <body class="man-rope">
-    <header>
-      <nav class="container mx-auto">
-        <div class="hero">
-          <div class="hero-content flex-col lg:flex-row">
+    <header class="container mx-auto">
+        <div class="my-20">
+          <div class="flex justify-between items-center flex-col lg:flex-row">
             <div>
               <h1 class="text-7xl font-extrabold">
                 It's good <br>
@@ -41,11 +42,11 @@
               <p class="py-6 text-lg">
                 Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
               </p>
-              <button class="btn btn-primary">Explore Me</button>
+              <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore Me <i class="fa-solid fa-arrow-trend-up"></i></button>
             </div>
             <div>
-              <img src="./images/banner.png" class="max-w-sm" />
-              <div class="flex items-center gap-5 drop-shadow-lg bg-white rounded-lg p-5 w-60 -mt-16">
+              <img src="./images/banner.png" class="" />
+              <div class="flex items-center gap-5 drop-shadow-lg bg-white rounded-lg p-5 w-60 -mt-28 ml-28">
                 <i class="fa-solid fa-star text-3xl text-amber-400"></i>
                 <div>
                   <h3 class="text-3xl">5.0</h3>
@@ -55,7 +56,6 @@
             </div>
           </div>
         </div>
-      </nav>
     </header>
     <main class="container mx-auto">
         <section class="text-center my-24">
@@ -131,7 +131,7 @@
             </p>
           </div>
         </section>
-        <section class="flex flex-col lg:flex-row gap-12 my-24 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+        <section class="flex flex-col lg:flex-row gap-12 my-24 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
           <div class="flex items-center lg:pr-28">
             <div class="space-y-5">
               <h2 class="text-5xl font-extrabold text-white">
@@ -221,8 +221,53 @@
           </div> 
         </section>
     </main>
-    <footer>
-
+    <footer class="lg:px-48 px-4 py-10 bg-base-200 text-base-content">
+      <div class="flex justify-between my-24">
+        <img src="./images/cup.png" alt="">
+        <p>
+          <span>Ready to get strated?</span>
+          <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Get Started</button>
+        </p>
+      </div>
+      <div class="footer">
+        <nav>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Branding</a> 
+          <a class="link link-hover">Design</a> 
+          <a class="link link-hover">Marketing</a> 
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">About us</a> 
+          <a class="link link-hover">Contact</a> 
+          <a class="link link-hover">Jobs</a> 
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Legal</header> 
+          <a class="link link-hover">Terms of use</a> 
+          <a class="link link-hover">Privacy policy</a> 
+          <a class="link link-hover">Cookie policy</a>
+        </nav> 
+        <form>
+          <header class="footer-title">Newsletter</header> 
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label> 
+            <div class="relative">
+              <input type="text" placeholder="username@site.com" class="bg-transparent border-black border-b-2  py-4 outline-none" /> 
+              <button class="btn text-white absolute top-0 right-0 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <aside class="mt-10 text-center">
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </aside>
     </footer>
 </body>
 </html>
